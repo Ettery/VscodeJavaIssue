@@ -1,0 +1,47 @@
+INFO   [10:03:54.353] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [10:03:54.355] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [10:03:54.356] [main] i.d.a.AssetsBundle -  Registering AssetBundle with name: assets for path /* 
+INFO   [10:03:54.388] [main] i.d.s.ServerFactory -  Starting thularest
+
+ .----------------.  .----------------.  .----------------.  .----------------. 
+| .--------------. || .--------------. || .--------------. || .--------------. |
+| |  _________   | || |  _________   | || |    _______   | || |  _________   | |
+| | |  _   _  |  | || | |_   ___  |  | || |   /  ___  |  | || | |  _   _  |  | |
+| | |_/ | | \_|  | || |   | |_  \_|  | || |  |  (__ \_|  | || | |_/ | | \_|  | |
+| |     | |      | || |   |  _|  _   | || |   '.___`-.   | || |     | |      | |
+| |    _| |_     | || |  _| |___/ |  | || |  |`\____) |  | || |    _| |_     | |
+| |   |_____|    | || | |_________|  | || |  |_______.'  | || |   |_____|    | |
+| |              | || |              | || |              | || |              | |
+| '--------------' || '--------------' || '--------------' || '--------------' |
+ '----------------'  '----------------'  '----------------'  '----------------' 
+ 
+INFO   [10:03:54.483] [main] o.e.j.s.SetUIDListener -  Opened application@45a1d057{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [10:03:54.484] [main] o.e.j.s.SetUIDListener -  Opened admin@51a16adf{HTTP/1.1,[http/1.1]}{0.0.0.0:8444} 
+INFO   [10:03:54.490] [main] o.e.j.s.Server -  jetty-9.4.z-SNAPSHOT; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.5+10 
+INFO   [10:03:55.014] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /api/hello (net.ettery.thularest.resources.HelloResource)
+ 
+INFO   [10:03:55.015] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7dd45c93{/,null,AVAILABLE} 
+INFO   [10:03:55.021] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [10:03:55.021] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [10:03:55.026] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@c318864{/,null,AVAILABLE} 
+INFO   [10:03:55.255] [main] o.e.j.s.AbstractConnector -  Started application@45a1d057{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [10:03:55.263] [main] o.e.j.s.AbstractConnector -  Started admin@51a16adf{HTTP/1.1,[http/1.1]}{0.0.0.0:8444} 
+INFO   [10:03:55.263] [main] o.e.j.s.Server -  Started @2249ms 
+INFO   [10:23:15.101] [Thread-11] o.e.j.s.AbstractConnector -  Stopped application@45a1d057{HTTP/1.1,[http/1.1]}{0.0.0.0:8080} 
+INFO   [10:23:15.106] [Thread-11] o.e.j.s.AbstractConnector -  Stopped admin@51a16adf{HTTP/1.1,[http/1.1]}{0.0.0.0:8444} 
+INFO   [10:23:15.107] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@c318864{/,null,UNAVAILABLE} 
+INFO   [10:23:15.119] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@7dd45c93{/,null,UNAVAILABLE} 
